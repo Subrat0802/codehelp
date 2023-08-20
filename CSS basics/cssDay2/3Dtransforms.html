@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            /* border: 1px solid; */
+        }
+        .translated{
+            transform: perspective(10px) translatez(-10px);
+            
+        }
+        .scaled{
+            margin-left: 300px;
+            transform: perspective(350px) scaleZ(9) rotatex(15deg) rotateY(30deg) ;
+        }
+    </style>
+</head>
+<body>
+    <div class="static">static</div>
+    <div class="translated">translated</div>
+    <div class="scaled">scale</div>
+</body>
+</html>
