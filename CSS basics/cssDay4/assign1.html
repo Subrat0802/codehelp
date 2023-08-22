@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .parent{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            margin-top: 40px;
+        }
+        .divv{
+            
+            padding: 15px;
+            border-radius: 7px; 
+            width: 30%;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        #price{
+            display:flex;
+            justify-content: space-around;
+            margin: 2px;
+            align-items: center;
+            width: 57%;
+            padding: 15px 0;
+        }
+        #price div{
+            background-color: aqua;
+            padding: 6px;
+            border-radius: 5px;
+        }
+        hr{
+            margin-top: 20px;
+        }
+        img{
+            width: 100%;
+            border-radius: 7px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="divv">
+            <img src="https://codehelp.s3.ap-south-1.amazonaws.com/Web_Dev_670f900667.jpg" alt="">
+            <h2>Web Development Master Course @dot Batch</h2>
+            <hr>
+            <div id="price">
+                <h4>RS.4500</h4> <del><h4>  RS.6999</h4></del><div id="off"><h4>42%off</h4></div>
+            </div>
+        </div>
+        <div class="divv">
+            <img src="https://dgyugonj9a9mu.cloudfront.net/63ac9183e4b0f1067f1b7b32_scaled_cover_daabaae21b.jpg" alt="">
+            <h2>Data Structures & Algorithums BootCamp @dot Batch</h2>
+            <hr>
+            <div id="price">
+                <h4>RS.4500</h4> <del><h4>RS.6999</h4></del><div id="off"><h4>42%off</h4></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
