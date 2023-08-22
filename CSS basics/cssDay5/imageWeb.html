@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #wrapper{
+            height: 100vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+        .container{
+            height: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .container h1{
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 3rem;   
+        }
+
+        .gallery{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .card{
+            width: 32%;
+            position: relative;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .card img{
+            width: 100%;
+            height: 100%;
+            filter: grayscale(100);
+            object-fit: cover;
+        }
+        .card:hover{
+            transform: scale(1.03);
+            transition: 0.32s;
+            filter: drop-shadow(0 0 5px #333);
+            
+        }
+        .card:hover img{
+            filter: grayscale(0%);
+        } 
+
+        .card figcaption{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 25px;
+            height: 20%;
+            font-weight: 500;
+            width: 100%;
+            font-size: 1rem;
+            color: #fff;
+            opacity: 0;
+            border-radius: 0 0 10px 10px;
+            transition: 0.3s;
+        }
+        .card:hover figcaption{
+            opacity: 1;
+            transition: scale(0.3s);
+        }
+        
+
+
+
+
+        /* .gallery{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 15px;
+        }
+        .gallery img{
+            width: 100%;
+            border-radius: 7px;
+            
+        } */
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <h1>My Gallery</h1>
+            <div class="gallery">
+                <figure class="card">
+                    <img src="image1.jpg" alt="">
+                    <figcaption>Image1</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="image2.jpeg" alt="">
+                    <figcaption>Image2</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="image3.jpeg" alt="">
+                    <figcaption>Image3</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="image4.jpeg" alt="">
+                    <figcaption>Image4</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="image5.jpeg" alt="">
+                    <figcaption>Image5</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="image6.jpeg" alt="">
+                    <figcaption>Image6</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="image7.jpeg" alt="">
+                    <figcaption>Image7</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="image8.jpeg" alt="">
+                    <figcaption>Image8</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="image9.jpeg" alt="">
+                    <figcaption>Image9</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

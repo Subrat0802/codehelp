@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+           
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            background-color: rgb(244, 242, 240);
+            height: 100vh;
+            width: 100vw;
+            
+        }
+        .mainDiv{
+            width: 45vw;
+            height: 50vh;
+        }
+        #cmug{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px 0 0 10px;
+        }
+        .mainDiv{
+            display: flex;
+            border-radius: 10px;
+        }
+        #firstc{
+            width: 190%;
+        }
+        #secondc{
+            padding: 20px;
+            background-color: white;
+            border-radius: 0 10px 10px 0;
+        }
+        p{
+            margin-bottom: 12px;
+        }
+        h2{
+            margin-bottom: 5px;
+        }
+        button{
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: rgb(11, 99, 70);
+            width: 90%;
+            color: white;
+            font-size: 1rem;
+            border-radius: 10px;
+            border: none;
+        }
+        button:hover{
+            background-color: rgb(7, 77, 54);
+            cursor: pointer;
+        }
+        #price{
+            display: flex;
+            width: 50%;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        #price h3{
+            color: rgb(11, 99, 70);
+        } 
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="mainDiv">
+            <div id="firstc">
+                <img src="mug.jpg" id="cmug">
+            </div>
+            <div id="secondc">
+                <p>COFFEE MUG</p>
+                <h2>White Coffee Mug</h2>
+                <p>Coffee Mugs are designed to express emotions. There are acclaimed for thier amazing designs & superior quality.</p>
+                <div id="price"><h3>RS. 149</h3><del>RS.230</del></div>
+                <button>
+                    <img src="icon-cart.png" alt="">
+                    Add to Cart
+                </button>
+            </div>  
+        </div>
+    </div>
+        
+</body>
+</html>
