@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 700px;
+            border: 1px solid red;
+            background-color: yellow;
+            display: grid;
+            /* grid-template-rows: 30px 150px 400px 20px;
+            grid-template-columns: 400px;
+
+            grid-template-areas: 
+            "hd"
+            "side"
+            "main"
+            "ft"; */
+            grid-template-columns: 200px 400px;
+            grid-template-rows: 30px 500px 30px;
+
+            grid-template-areas: 
+            "hd hd"
+            "side main"
+            "ft ft";
+        }
+        .box{
+            border: 1px solid green;
+            background-color: aqua;
+        }
+        #header{
+            grid-area: hd;
+        }
+        #footer{
+            grid-area: ft;
+        }
+        #main{
+            grid-area: main;
+        }
+        #sidebar{
+            grid-area: side;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="header">Header</div>
+        <div class="box" id="sidebar">Sidebar</div>
+        <div class="box" id="content">Content</div>
+        <div class="box" id="footer">Footer</div>
+    </div>
+</body>
+</html>

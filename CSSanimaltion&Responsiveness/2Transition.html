@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 500px;
+            width: 500px;
+            background-color: green;
+            border: 3px solid ;
+            display: flex;
+        }
+        .box{
+            height: 150px;
+            width: 150px;
+            margin: 20px;
+            border: 2px solid orange;
+            background-color: aqua;
+            /* transition-property: background-color; */
+            /* transition-delay: 2s; */
+
+            /* transition: all 1s ease 2s; */
+            /* transition:  background-color 1s ease 3sec; */
+            transition:  transform 1s ease-in ;
+        }
+        .box:hover{
+            /* transform: rotate(45deg);
+            background-color: brown; */
+            transform: translate(500px) rotate(360deg);
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Main ek box hoon</div>
+    </div>
+</body>
+</html>
