@@ -2,7 +2,7 @@
 *{
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'Be Vietnam Pro', sans-serif;
 }
@@ -13,7 +13,7 @@
     overflow-x: hidden;
 }
 .container{
-    width: 1000px;
+    width: 1100px;
     margin: 0 auto;
 }
 .navbar{
@@ -65,6 +65,7 @@ a{
     margin: 4rem auto;
     padding: 0 1rem;
     padding-bottom: 8rem;
+    
 }
 .fadded-text{
     user-select: none;
@@ -144,7 +145,7 @@ a{
     position: absolute;
 }
 .user-image{
-    padding: 2.5rem;
+    padding: 2rem;
     filter: grayscale(1);
     transition: all 1s;
     animation: scaleImage 5s linear infinite;
@@ -271,7 +272,7 @@ a{
     
 }
 .project-container{
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 3rem auto;
     
@@ -562,4 +563,117 @@ a{
   }
   .skill-subHeading p{
     margin: 15px 0;
+  }
+  .contactus-form-container{
+    width: 100%;
+    background-color: rgb(231,231,231);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contactus-heading{
+    font-size: 4rem;
+    color: #e84949;
+    padding-top: 2rem;
+    margin-left: 8rem;
+  }
+  .contactus-sub-heading{
+    font-size: 2rem;
+    color: #343d68aa;
+    text-transform: capitalize;
+    margin-left: 8rem;
+  }
+
+  .contactus-form-container{
+    
+    /* margin-top: 10px; */
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+
+  }
+  .form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+    margin: 2rem 5rem;
+
+  }
+  .formfield-container{
+    width: 100%;
+  }
+  .formfield{
+    width: 100%;
+    height: 42px;
+    padding: 0 2rem;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #1f1f1f;
+    font-weight: 500;
+    border: none;
+    margin-top: 17px;
+  }
+  .formfield-textarea{
+    height: auto;
+    padding-top: 1rem;
+  }
+  .submit-btn{
+    border: none;
+    font-size: 1.4rem;
+    margin: 1rem 0;
+
+  }
+
+  .submit-btn:hover{
+    scale: 0.9;
+  }
+
+  .submit-icon{
+    padding: 0 1rem;
+    font-size: 1.5rem;
+  }
+
+  footer{
+    position: relative;
+    background-color: #343d68;
+    padding: 5rem;
+    margin-top: -19px;
+
+  }
+  .footer-wrapper{
+    display: flex;
+    gap: 1rem;
+    padding: 1.2rem 1.2rem 0 1.2rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-faded-text{
+    position: absolute;
+    left:0;
+    bottom: 0;
+    color: #535c87;
+    user-select: none;
+    font-size: 5em;
+  }
+  .link-wrapper{
+    display: flex;
+    gap: 1.2rem;
+  }
+
+  .link-wrapper div a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s;
+  }
+  .link-wrapper div a:hover{
+    color: #e84949;
+  }
+  .icon-wrapper{
+    display: flex;
+    gap: 1rem;
+
   }
