@@ -23,6 +23,10 @@ li{
     list-style: none;
 
 }
+li>a:hover{
+    color: aqua;
+}
+
 button{
     user-select: none;
 }
@@ -38,51 +42,30 @@ a{
     justify-content: space-between;
     
 }
-
-.input_div{
-    display: flex;
-    justify-content: center;
-    padding-top: 2rem;
-    user-select: none;
-    margin-bottom: 1rem;
-
+#quotes_div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 2rem;
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
 }
-input{
-    height: 2rem;
-    width: 200px;
-    background-color: azure;
-    border: none;
-    border-radius: 7px;
-    color: white;
-    padding-left: 1rem ;
-    color: black;
-    
-} 
-button{
-    padding: 0 1rem;
-    background-color: aqua;
-    color: black;
-    border-radius: 7px;
-    border: none;
-    font-weight: bold;
-    margin-left: 0.5rem;
-    cursor: pointer;
-
-
-}
-.input_div>button:hover{
-    background-color: rgb(73, 201, 201);
-}
-
-.allTodos_div{
+#quotes_div>div{
+    border: 1px solid rgb(41, 40, 40);
     display: flex;
     flex-direction: column;
-   
-} 
-.allTodos_div div{
-    display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 1rem;
+    text-align: center;
+    gap: 20px;
+    /* height: 400px; */
+    border-radius: 1rem;
+    padding:  20px;
+    cursor: pointer;
+}
+#quotes_div>div p{
+    color: aqua;
+}
+#quotes_div>div h3{
+    color: rgb(234, 234, 234);
 }

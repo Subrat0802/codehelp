@@ -23,6 +23,10 @@ li{
     list-style: none;
 
 }
+li>a:hover{
+    color: aqua;
+}
+
 button{
     user-select: none;
 }
@@ -39,50 +43,21 @@ a{
     
 }
 
-.input_div{
-    display: flex;
-    justify-content: center;
-    padding-top: 2rem;
-    user-select: none;
-    margin-bottom: 1rem;
-
-}
-input{
-    height: 2rem;
-    width: 200px;
-    background-color: azure;
-    border: none;
-    border-radius: 7px;
-    color: white;
-    padding-left: 1rem ;
-    color: black;
-    
-} 
-button{
-    padding: 0 1rem;
-    background-color: aqua;
-    color: black;
-    border-radius: 7px;
-    border: none;
-    font-weight: bold;
-    margin-left: 0.5rem;
-    cursor: pointer;
-
-
-}
-.input_div>button:hover{
-    background-color: rgb(73, 201, 201);
-}
-
-.allTodos_div{
-    display: flex;
-    flex-direction: column;
-   
-} 
-.allTodos_div div{
+#quotes_div{
+    text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 1rem;
+    margin-top: 200px;
+    padding: 0 10%;
+    
+}
+
+p{
+    color: aqua;
+}
+h3{
+    color: rgb(170, 167, 167);
+    margin-bottom: 20px;
 }
