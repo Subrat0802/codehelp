@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap"
     rel="stylesheet" />
-    <title>Todo List</title>
-    <link rel="stylesheet" href="/day14/css/index.css">
+    <link rel="stylesheet" href="/day14/css/login.css">
     <link rel="stylesheet" href="/day14/css/style.css">
+
 </head>
 <body>
-    
-    <div id="navbar"></div>
 
+    <div id="navbar"></div>
 
     <!-- <div class="navbar_div">
         <div>
@@ -38,19 +38,20 @@
         </div>
     </div> -->
 
-        <div class="input_div">
-            <input type="text" placeholder="Add Todo.." id="todoText_input">
-            <button id="addTodo_button">Add Todo</button>
-        </div>
 
-        <div class="allTodos_div">
+    <div class="login_div">
+        <h2>Login</h2>
+        <input type="text" placeholder="Email" id="email">
+        <input type="text" name="" placeholder="Password" id="password">
+        <button id="login_button">Login</button>
+        <p>Don't have an account? <span><a href="./registration.html">Registration</a></span></p>
+    </div>
 
-        </div>
+    <div id="ep">
+        <p>eve.holt@reqres.in</p>
+        <p>cityslicka</p>
+    </div>
 
-  
-        
-        
-
-    <script type="module" src="/day14/js/index.js"></script>
+    <script type="module" src="/day14/js/login.js"></script>
 </body>
 </html>

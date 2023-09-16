@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap"
     rel="stylesheet" />
-    <title>Todo List</title>
-    <link rel="stylesheet" href="/day14/css/index.css">
+    <link rel="stylesheet" href="/day14/css/cart.css">
     <link rel="stylesheet" href="/day14/css/style.css">
+
 </head>
 <body>
-    
-    <div id="navbar"></div>
 
+    <div id="navbar"></div>
 
     <!-- <div class="navbar_div">
         <div>
@@ -30,27 +30,23 @@
                 </li>
                 <li>
                     <a href="/day14/html/Login.html">Login</a>
-                </li>
-                <li>
+                </li> -->
+                <!-- <li>
                     <a href="/day14/html/cart.html">Cart</a>
                 </li>
             </ul>
         </div>
-    </div> -->
+    </div> --> 
 
-        <div class="input_div">
-            <input type="text" placeholder="Add Todo.." id="todoText_input">
-            <button id="addTodo_button">Add Todo</button>
-        </div>
+    <div class="cart_navbar">
+        <h2>Total Price - <span id="totalPrice_span">0</span></h2>
+        <button id="payment_button">Payment Page</button>
+    </div>
 
-        <div class="allTodos_div">
-
-        </div>
-
-  
+    <div class="cart_div">
         
-        
+    </div>
 
-    <script type="module" src="/day14/js/index.js"></script>
+    <script type="module" src="/day14/js/cart.js"></script>
 </body>
 </html>

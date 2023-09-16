@@ -1,0 +1,33 @@
+
+.products_div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 2rem;
+    gap: 10px;
+}
+.products_div > div{
+    margin: 1rem;
+    background-color: white;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 7px;
+    
+}
+h3,p{
+    background-color: white; 
+    color: black;
+    margin-bottom: 0.3rem;
+}
+img{
+    width: 100%;
+    border-radius: 7px;
+    height: 150px;
+}
+
+button{
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    margin-right: 0.3rem;
+    border-radius: 7px;
+    border: none; 
+}

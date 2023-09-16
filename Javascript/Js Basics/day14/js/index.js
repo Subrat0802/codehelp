@@ -1,3 +1,13 @@
+import navbar from "../component/navbar.js";
+const container = document.querySelector("#navbar");
+
+container.innerHTML=navbar();
+
+
+
+
+
+
 //user will be write something => Add todo
 
 //catch the button

@@ -1,31 +1,4 @@
-*,*::after,*::before{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Merriweather Sans', sans-serif;
-    background-color: black;
-    color: white;
-    user-select: none;
-}
 
-.navbar_div{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 2rem;
-    border-bottom: 1px solid grey;
-    padding: 0 5%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    align-items: center;
-    user-select: none;
-}
-li{
-    list-style: none;
-
-}
-li>a:hover{
-    color: aqua;
-}
 
 button{
     user-select: none;

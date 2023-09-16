@@ -1,3 +1,9 @@
+import navbar from "../component/navbar.js";
+const container = document.querySelector("#navbar");
+
+container.innerHTML=navbar();
+
+
 
 
 //1get the data from API
