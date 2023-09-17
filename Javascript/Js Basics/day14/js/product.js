@@ -40,6 +40,9 @@ const handleAddToCart = (data) =>{
     data.qty = 1;
     cart.push(data);
     localStorage.setItem("cart",JSON.stringify(cart));
+    
+    const container = document.querySelector("#navbar");
+    container.innerHTML=navbar();
     alert("Data is added");
 }
  
@@ -63,7 +66,7 @@ const appendData = (data) => {
         const buttonBuy = document.createElement("button");
         
         
-        img.src=el.images[1];
+        img.src=el.thumbnail;
         h3.innerText=el.description;
         p1.innerText=`Price: ${el.price}`;
         p2.innerText=`Brand: ${el.brand}`;

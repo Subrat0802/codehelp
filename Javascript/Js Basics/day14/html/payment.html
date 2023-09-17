@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="/day14/css/payment.css">
+    <link rel="stylesheet" href="/day14/css/style.css">
+</head>
+<body>
+
+    <div id="navbar"></div>
+    
+    <div id="payment_div">
+        <form id="payment_form">
+            <div>
+                <label for="">Name:</label>
+                <input type="text" placeholder="Type your name" id="name">
+            </div>
+            <div>
+                <label for="">Address:</label>
+                <input type="text" placeholder="Type your Address" id="address">
+            </div>
+            <div>
+                <label for="">city:</label>
+                <input type="text" placeholder="Type your city" id="city">
+            </div>
+            <div>
+                <label for="">states:</label>
+                <select name="" id="state">
+
+                </select>
+            </div>
+            <div>
+                <label for="">pin:</label>
+                <input type="text" placeholder="Type your pin" id="pin">
+            </div>
+            <div>
+                <label for ="">Payment mode:</label>
+                <select name="" id="payment_mode">
+                    <option value="cod">COD</option>
+                    <option value="card">CARD</option>
+                </select>
+            </div>
+
+            <div id="card_input"></div>
+
+
+            <div>
+                <input type="submit" name="" id="submitBtn">
+            </div>
+        </form>
+    </div>
+
+
+    <script type="module" src="/day14/js/payment.js"></script>
+</body>
+</html>

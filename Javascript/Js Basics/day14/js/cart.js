@@ -72,6 +72,10 @@ const handleRemove = (singleData) =>{
 
     appendData(data);
     totalPrice(data);
+
+    
+    const container = document.querySelector("#navbar");
+    container.innerHTML=navbar();
 }
 
 
@@ -83,6 +87,7 @@ const totalPrice = (data) => {
     data.map((el) => {
         total = total + el.price * el.qty;
     })
+    localStorage.setItem("totalPrice", JSON.stringify(total));
     const span = document.querySelector("#totalPrice_span");
     span.innerText = total;
 }
@@ -128,3 +133,25 @@ const appendData = (data) => {
     })
 }
 appendData(data);
+
+
+const payment_button = document.querySelector("#payment_button");
+
+payment_button.addEventListener("click", () => {
+
+    const cart = JSON.parse(localStorage.getItem("cart"));
+    if(cart.length === 0){
+        alert("There is nothing in the cart");
+        return;
+    }
+
+    const paymentData = {
+        cartData: cart,
+        totalPrice: JSON.parse(localStorage.getItem("totalPrice"))
+    }
+    console.log(paymentData);
+
+    localStorage.setItem("paymentData", JSON.stringify(paymentData));
+
+    window.location.href = "payment.html";
+})

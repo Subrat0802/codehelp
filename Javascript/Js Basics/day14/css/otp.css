@@ -1,0 +1,30 @@
+
+.otp_div{
+    text-align: center;
+    margin-top: 100px;
+}
+input{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 7px;
+    border: none;
+    background-color: antiquewhite;
+    margin-right: 0.5rem;
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+}
+button{
+    background-color: aqua;
+    padding: 0.5rem 0.7rem;
+    border-radius: 7px;
+    border: none;
+    color: black;
+    margin-top: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+button:hover{
+    color: rgb(223, 223, 223);
+}
