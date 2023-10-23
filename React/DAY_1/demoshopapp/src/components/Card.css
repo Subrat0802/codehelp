@@ -1,0 +1,6 @@
+
+.card{
+    color: black;
+    flex-direction: column;
+    display: flex;
+}

@@ -1,0 +1,7 @@
+.date{
+    font-size: 24px;
+    background-color: aqua;
+    text-align: center;
+    display: flex;
+    margin: auto;
+}
