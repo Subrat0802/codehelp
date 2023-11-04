@@ -1,6 +1,8 @@
+import { useState } from "react";
 import Card from "./Card";
 
 function Tours({ tours, removeTour }) {
+  const [app,setApp] = useState
   return (
     <div className="container">
       <div>
