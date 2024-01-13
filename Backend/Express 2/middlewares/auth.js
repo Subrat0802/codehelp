@@ -5,7 +5,7 @@ require('dotenv').config();
 
 exports.auth = (req, res, next) => {
     try{
-        //extract jwt token
+        //extract jwt token 
         
         console.log("cookies", req.cookies.token);
         console.log("body", req.body.token);
@@ -33,7 +33,7 @@ exports.auth = (req, res, next) => {
         next();
     }
     catch(error){
-        return res.status(401).json({
+        return res.status(401).json({ 
             success:false,
             message: "Something went wrong, while verifyng the token"
         })
