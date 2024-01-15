@@ -15,9 +15,7 @@ const Cards = ({ courseData, category }) => {
     }
     else{
         return courseData[category];
-    }
-    
-    
+    } 
   }
 
   return (

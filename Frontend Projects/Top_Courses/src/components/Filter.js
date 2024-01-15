@@ -9,11 +9,11 @@ const Filter = (props) => {
     setCategory(title);
   };
   return (
-    <div className=" flex gap-6 text-center w-full justify-center items-center border py-3 font-semibold text-xl ">
+    <div className=" flex gap-6 text-center w-full justify-center items-center py-3 font-semibold text-xl ">
       {filterData.map((el) => {
         return (
           <button
-            className="bg-bgDark2 px-3 rounded-lg hover:bg-bgDark text-white"
+            className="bg-bgDark2 px-3 rounded-lg hover:bg-bgDark2 text-white"
             onClick={() => filterDataHandler(el.title)}
             key={el.id}
           >

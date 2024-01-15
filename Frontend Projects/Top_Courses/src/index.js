@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <div>
+  <div className="bg-bgDark2 min-h-[100vh]" >
     <App />
     <ToastContainer />
   </div>

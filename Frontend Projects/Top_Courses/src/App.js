@@ -29,11 +29,11 @@ const App = () => {
 
   return (
     <div>
-      <div className="bg-red-500 text-center font-bold text-4xl py-2" >
+      <div className="bg-bgDark text-center font-bold text-4xl py-2 " >
         <div className="text-white">TOP COURSES</div>
       </div>
 
-      <div className="flex gap-3">
+      <div className="flex gap-3 mb-8 bg-bgDark shadow-xl">
         <Filter className="flex gap-4"
           filterData={filterData}
           category={category}
@@ -41,7 +41,7 @@ const App = () => {
         />
       </div>
 
-      <div>
+      <div className="bg-bgDark2">
         {loading ? (
           <Spinner />
         ) : (

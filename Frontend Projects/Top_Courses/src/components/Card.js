@@ -8,8 +8,8 @@ const Card = ({ course }) => {
   const courseDesc = `${course.description.substring(0, 70)}`;
 
   return (
-    <div className="w-72 border pb-5">
-      <img src={course.image.url} alt={course.image.alt} />
+    <div className="w-72 rounded-lg pb-5 bg-bgDark text-white ">
+      <img className="rounded-t-lg" src={course.image.url} alt={course.image.alt} />
       <div className="p-4">
         <p>{course.title}</p>
         <p>
@@ -30,7 +30,7 @@ const Card = ({ course }) => {
         ) : (
           <button
             onClick={() => toast.warning("Course Unliked")}
-            className="bg-gray-100 px-4 rounded-md mb-4"
+            className="bg-bgDark2 px-4 rounded-md mb-4 text-gray-400"
           >
             Liked
           </button>
