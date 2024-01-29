@@ -2,22 +2,22 @@ const mongoose = require("mongoose");
 
 const todoSchema = new mongoose.Schema({
   title: {
-    type: String, // Corrected 'Type' to 'type'
+    type: String, 
     required: true,
     maxLength: 50,
   },
   description: {
-    type: String, // Corrected 'Type' to 'type'
+    type: String, 
     required: true,
     maxLength: 50,
   },
   createdAt: {
-    type: Date, // Corrected 'Type' to 'type'
+    type: Date, 
     required: true,
     default: Date.now(),
   },
   updatedAt: {
-    type: Date, // Corrected 'Type' to 'type'
+    type: Date, 
     required: true,
     default: Date.now(),
   },
