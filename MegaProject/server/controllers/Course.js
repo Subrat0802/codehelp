@@ -1,10 +1,10 @@
 const Course = require("../models/Course");
 const Tag = require("../models/Tags");
 const User = require("../models/User");
-const {uploadImageToCloudinary} = require("../utils/ImageUploader");
+const {uploadImageToClodinary} = require("../utils/ImageUploader");
 
 
-//createCoures Handler function
+//createCoures Handler function tag
 exports.createCourse = async(req, res) => {
     try{
         //fetch data
@@ -44,7 +44,7 @@ exports.createCourse = async(req, res) => {
         }
 
         //upload image to cloudinary
-        const thumbnailImage  =await uploadImageToCloudinary(thumbnail, process.env.FOLDER_NAME);
+        const thumbnailImage  =await uploadImageToClodinary(thumbnail, process.env.FOLDER_NAME);
 
         //create an entery for new course
         const newCourse = await Course.create({
