@@ -95,7 +95,7 @@ const Body = () => {
   return loading ? (
     <Spinner />
   ) : (
-    <div className="flex flex-col justify-center items-center w-full bg-[#0F0F0F] text-[#F1F1F1] pt-24 py-10 ">
+    <div className="flex flex-col justify-center items-center w-full bg-[#0F0F0F] text-[#F1F1F1] pt-24 py-10  ">
       {
         locationSideBar && <div  className="fixed w-[25%]  h-[100vh] top-0 left-0 bg-black z-20 mt-24"> hello </div>
       }
