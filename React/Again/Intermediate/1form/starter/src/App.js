@@ -8,7 +8,7 @@ const App = () => {
   // const changeHandler = (event) => {
   //   // console.log("Printing first name")
   //   // console.log(event.target.value);
-  //   setFirstName(event.target.value)
+  //   setFirstName(event.target.value) 
   // };
 
   // const changeLasteNameHandler = (event) => {

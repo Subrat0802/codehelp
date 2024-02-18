@@ -10,7 +10,7 @@ const Random = () => {
 
   
 
-  const [tag, setTag] = useState("");
+  const [tag, setTag] = useState();
 
 
   const onChangeSearch = (event) => {

@@ -4,7 +4,7 @@ const jwt = require("jsonwebtoken");
 require("dotenv").config();
 
 //signup route handler
-exports.signup = async (req, res) => {
+exports.signup = async (req, res) => {3
   try {
     //get data/ fetch data from request ki body
     const { name, email, password, role } = req.body;
@@ -24,7 +24,7 @@ exports.signup = async (req, res) => {
     } catch (error) {
       return res.status(500).json({
         success: false,
-        message: "Error in hashing password",
+        message: "Error while hashing password",
       });
     }
 
@@ -98,7 +98,7 @@ exports.login = async (req, res) => {
             expires: new Date(Date.now() + 3 * 24 * 60 * 60 * 1000),
             httpOnly:true
         }
-        res.cookie("subratToken", token, options).status(200).json({
+        res.cookie("token", token, options).status(200).json({
             success:true,
             token,
             user,
