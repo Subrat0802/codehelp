@@ -33,7 +33,7 @@ const Login = () => {
       password.current.value,
       // name.current.value
     );
-    console.log(email.current.value)
+
     setErrorMessage(message);
 
     //firbase authentication
@@ -89,7 +89,7 @@ const Login = () => {
           const errorMessage = error.message;
           setErrorMessage(errorCode);
           navigate("/");
-          // console.log(errorCode, errorMessage);
+    
         });
     }
   };

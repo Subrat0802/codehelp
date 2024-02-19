@@ -16,7 +16,18 @@
 - Bugfix: sign up user diaplay name and profile picture update
 - BugFix: if the user is not logged in Redirecting / browser to login page and vide-verss
 - UnSubscibed to the onAuthStateChange callback
-- 
+- Add hardcoded values to the constants file
+- Register TMDB API
+- get data from TMDB
+- Custom hook for now playing Movies
+- create MovieSlice
+- update Store with movie data
+- Planning for main container and secondary container
+- fetch data for trailer video data
+- embedded the youtube video and make it autoplay and mute
+- Tailwind Classes to make it look awesome make container look awesome
+
+
 
 
 
