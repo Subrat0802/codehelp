@@ -3,6 +3,20 @@
 - Configure Tailwind
 - Header
 - Login Form
+- sign up form
+- form validation
+- useRef hook
+- firebase setup
+- Deploying our app to production
+- create signup user account (firebase)
+- implement Sign In user Api
+- create redux store with userSlice
+- implemented Sign out
+- update profile
+- Bugfix: sign up user diaplay name and profile picture update
+- BugFix: if the user is not logged in Redirecting / browser to login page and vide-verss
+- UnSubscibed to the onAuthStateChange callback
+- 
 
 
 
