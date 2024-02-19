@@ -10,7 +10,7 @@ const Browse = () => {
   useNowPlayingMovies();
 
   return (
-    <div>
+    <div className='overflow-x-hidden bg-black'>
       <Header />
       <MainContainer />
       <SecondaryContainer />
