@@ -14,7 +14,6 @@ const MovieList = ({ title, movies }) => {
                     return <MovieCard key={poster.id} posterPath={poster.poster_path}/>
                 })
             }
-          
         </div>
       </div>
     </div>

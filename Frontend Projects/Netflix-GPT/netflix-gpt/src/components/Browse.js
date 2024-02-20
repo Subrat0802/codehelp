@@ -1,33 +1,29 @@
-import React from 'react'
-import Header from './Header'
-import useNowPlayingMovies from '../hooks/useNowPlayingMovies'
-import MainContainer from './MainContainer';
-import SecondaryContainer from './SecondaryContainer';
-
+import React from "react";
+import Header from "./Header";
+import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
+import MainContainer from "./MainContainer";
+import SecondaryContainer from "./SecondaryContainer";
+import GPTSearch from "./GPTSearch";
+import { useSelector } from "react-redux";
 
 const Browse = () => {
+  const showGptSearchView = useSelector((state) => state.gpt.showGptSearch);
 
   useNowPlayingMovies();
 
   return (
-    <div className='overflow-x-hidden bg-black'>
+    <div className="overflow-x-hidden">
       <Header />
-      <MainContainer />
-      <SecondaryContainer />
-
-      {/* 
-        main container
-          - video bg
-          - video title
-        secondary container
-          -movieList >< n 
-            -cards >< n
-
-        
-      */}
-      
+      {showGptSearchView ? (
+        <GPTSearch />
+      ) : (
+        <>
+          <MainContainer />
+          <SecondaryContainer />
+        </>
+      )}
     </div>
-  )
-}
+  );
+};
 
-export default Browse
+export default Browse;

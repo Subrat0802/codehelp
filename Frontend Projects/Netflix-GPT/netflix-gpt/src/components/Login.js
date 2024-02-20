@@ -10,7 +10,7 @@ import { auth } from "../utils/firebase";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
 import { useNavigate } from "react-router-dom";
-import { Avatar_Img } from "../utils/constants";
+import { Avatar_Img, BG_URL } from "../utils/constants";
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
@@ -100,7 +100,7 @@ const Login = () => {
       <div className="absolute ">
         <img
           className=""
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/c0b69670-89a3-48ca-877f-45ba7a60c16f/2642e08e-4202-490e-8e93-aff04881ee8a/IN-en-20240212-popsignuptwoweeks-perspective_alpha_website_large.jpg"
+          src={BG_URL}
         />
       </div>
       <form className=" py-16 mt-48 p-12 absolute bg-opacity-85 rounded-md  text-white bg-black  w-3/12 mx-auto my-28 right-0 left-0">
