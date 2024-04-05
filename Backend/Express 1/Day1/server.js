@@ -1,7 +1,7 @@
 //step 1: create a folder
 //step 2: move into that folder
 //step 3: npm init -y
-//step 4: open folder using BSCODE
+//step 4: open folder using vSCODE
 //step 5: npm i express
 //step 6: create server.js
 
