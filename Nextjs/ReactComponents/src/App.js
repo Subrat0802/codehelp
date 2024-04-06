@@ -1,4 +1,6 @@
 import React from 'react'
+import WeatheraAgain from './Components/WeatheraAgain'
+import SignatureApp from './Components/Signature'
 // import BmiCalculator from './Components/BmiCalculator'
 // import Weather from './Components/Weather'
 
@@ -8,7 +10,8 @@ const App = () => {
       {/* <BmiCalculator /> */}
       {/* <Weather /> */}
 
-      
+      {/* <WeatheraAgain /> */}
+      <SignatureApp />
 
     </div>
   )
