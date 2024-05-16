@@ -1,0 +1,38 @@
+.container{
+    position: sticky;
+    top: 40px;
+
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.userDetails{
+    display: flex;
+    flex-direction: column;
+}
+
+.userName{
+    font-weight: 700;
+}
+.userTitle{
+    font-size: 20px;
+    color: var(--textSec);
+}
+
+.list{
+    list-style: none;
+
+}
+
+.item{
+    color: var(--textSec);
+    font-weight: bold;
+    font-size: 16px;
+    margin: 10px 0px;
+    
+}

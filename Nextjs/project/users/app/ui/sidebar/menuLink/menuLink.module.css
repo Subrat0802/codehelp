@@ -1,0 +1,15 @@
+.container{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    color: white;
+    list-style: none;
+}
+
+.container:hover, .active {
+    background-color: gray;
+}

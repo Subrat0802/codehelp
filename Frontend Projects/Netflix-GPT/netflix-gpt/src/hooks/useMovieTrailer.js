@@ -8,11 +8,13 @@ const useMovieTrailer = (movieId) => {
 
   const dispatch = useDispatch();
 
+  const trailerVideoOnlyFetch = useSelector(store => store.movies.trailerVideo);
+
   const getMovieVideo = async () => {
-    const data = await fetch(
+    const data = await fetch( 
       `https://api.themoviedb.org/3/movie/${movieId}/videos?language=en-US`,
       API_OPTIONS
-    );
+    ); 
     const json = await data.json();
 
     const filterData = json?.results?.filter(
@@ -24,8 +26,8 @@ const useMovieTrailer = (movieId) => {
   };
 
   useEffect(() => {
-    getMovieVideo();
+    !trailerVideoOnlyFetch && getMovieVideo();
   }, []);
-};
+};   
 
 export default useMovieTrailer;

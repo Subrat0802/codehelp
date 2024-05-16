@@ -21,10 +21,10 @@ const RestaurantMenu = () => {
       const data = await fetch(Restaurant_API + resId);
       const json = await data.json();
 
-      setRestaurantData(json?.data?.cards[0]?.card?.card?.info);
+      setRestaurantData(json?.data?.cards[2]?.card?.card?.info);
 
       const ResCataegories =
-        json?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
+        json?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
           (c) =>
             c.card?.card?.["@type"] ===
             "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"

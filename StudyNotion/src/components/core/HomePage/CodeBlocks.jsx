@@ -64,6 +64,7 @@ const CodeBlocks = ({
                 }
             }
             omitDeletionAnimation={true}
+            // Continuously developing the Study Notion website, an ongoing project focused on learning backend development with the MERN stack. This educational platform aims to provide comprehensive resources for backend development within the ed-tech domain.
            />
         </div>
 

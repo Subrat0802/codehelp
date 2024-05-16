@@ -43,10 +43,6 @@
 
 
 
-
-
-
-
 # Features
 - login / signup
     - sign In / sign up from

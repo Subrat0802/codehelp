@@ -64,13 +64,14 @@ h1{
     background-color: var(--colorDark2);
     cursor: pointer;
     padding: 10px 30px;
-    margin-bottom: 10px;
+    
 }
 
 .sub-container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     
 }
 .grant-location-container{
@@ -108,6 +109,7 @@ h1{
 
 .user-info-container{
     display: none;
+   
 }
 .user-info-container.active{
     display: flex;
@@ -157,6 +159,7 @@ h1{
     flex-direction: column;
     gap: 5px 0;
     align-items: center;
+    margin-top: -20px;
 
 }
 
@@ -183,7 +186,7 @@ h1{
     justify-content: center;
     align-items:flex-start;
     gap: 0 10px;
-    margin-bottom: 3rem;
+   
     
 }
 .form-container.active{
@@ -214,4 +217,7 @@ h1{
     align-items: center;
     justify-content: center;
     
+}
+.body{
+ background-color: #20436D;;
 }

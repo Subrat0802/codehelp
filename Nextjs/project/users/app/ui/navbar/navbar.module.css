@@ -1,0 +1,38 @@
+.container{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--bgSec);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    gap: 5px;
+}
+.search {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    background-color: var;
+    border-radius: 5px;
+    background-color: var(--bg);
+}
+.input{
+    background-color: var(--bg);
+    color: white;
+    border: none;
+    padding: 2px 4px;
+    border-radius: 5px;
+    
+}
+
+.menu{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    gap: 10px;
+}

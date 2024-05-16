@@ -11,7 +11,6 @@ import Mainheader from "./components/Mainheader";
 function App() {
   return (
   <div>
-
     <nav>
       <ul className="flex justify-between font-bold w-64 ">
         <NavLink to="/"><li>Home</li></NavLink>
@@ -27,7 +26,6 @@ function App() {
       <Route path="/" element={<Mainheader />} >
         <Route index element={<Home />}/>
         <Route path="/login" element={<Login />}/>
-
         <Route path="/signup" element={<Signup />}/>
         <Route path="/support" element={<Support />}/>
         <Route path="*" element={<div>Something went wrong</div>} />

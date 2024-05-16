@@ -4,6 +4,10 @@ require("dotenv").config();
 
 const PORT = process.env.PORT || 4000;
 
+const cookieParser = require("cookie-parser");
+app.use(cookieParser())
+
+
 app.use(express.json());
 
 const dbConnect = require("./config/dbconnect");
@@ -13,5 +17,5 @@ const routes = require("./routes/router");
 app.use("/api/v1", routes)
 
 app.listen(PORT, () => {
-    console.log(`App is running at ${PORT}`)
+    console.log(`App is running at ${PORT}`);
 })

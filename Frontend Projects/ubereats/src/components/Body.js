@@ -54,7 +54,7 @@ const Body = () => {
     }
     setLoading(false);
   };
-
+  
   useEffect(() => {
     fetchData();
   }, []);
